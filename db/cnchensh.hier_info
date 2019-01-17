@@ -1,0 +1,469 @@
+|cnchensh
+A1 <= display:inst2.A1
+CLK => signal:inst3.CLK
+CLK => detect:inst.CLK
+CLK => buzzer:inst7.CLKSOURCE
+IN4 => detect:inst.IN4
+IN5 => detect:inst.IN5
+IN6 => detect:inst.IN6
+IN7 => detect:inst.IN7
+B1 <= display:inst2.B1
+C1 <= display:inst2.C1
+D1 <= display:inst2.D1
+E1 <= display:inst2.E1
+F1 <= display:inst2.F1
+G1 <= display:inst2.G1
+A2 <= display:inst2.A2
+B2 <= display:inst2.B2
+C2 <= display:inst2.C2
+D2 <= display:inst2.D2
+E2 <= display:inst2.E2
+F2 <= display:inst2.F2
+G2 <= display:inst2.G2
+O0 <= signal:inst3.Q0
+O1 <= signal:inst3.Q1
+O2 <= signal:inst3.Q2
+O3 <= signal:inst3.Q3
+buzzer <= buzzer:inst7.BUZZER
+light <= buzzer:inst7.BUZZER
+pin_name <= signal:inst3.C
+ER <= detect:inst.ERROR
+
+
+|cnchensh|display:inst2
+A1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+ERROR => inst10.IN0
+ERROR => inst5.IN0
+LTDWN => inst4.IN0
+LTDWN => inst7.IN1
+SEG2 => inst3.IN0
+B1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+E1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+F1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+G1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= 7448:inst.OA
+SEG10 => 7448:inst.A
+SEG12 => 7448:inst.C
+SEG13 => 7448:inst.D
+SEG11 => 7448:inst.B
+B2 <= 7448:inst.OB
+C2 <= 7448:inst.OC
+D2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+E2 <= 7448:inst.OE
+F2 <= 7448:inst.OF
+G2 <= 7448:inst.OG
+
+
+|cnchensh|display:inst2|7448:inst
+OA <= 69.DB_MAX_OUTPUT_PORT_TYPE
+B => 27.IN0
+LTN => 27.IN1
+LTN => 25.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+C => 25.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OB <= 68.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 70.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 67.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 71.DB_MAX_OUTPUT_PORT_TYPE
+OF <= 66.DB_MAX_OUTPUT_PORT_TYPE
+OG <= 72.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst
+PRESS <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+IN7 => inst6.IN0
+IN7 => inst4.IN0
+IN7 => inst5.IN3
+IN7 => inst22.IN0
+IN7 => inst2.IN0
+IN7 => 74148:inst14.3N
+IN6 => inst6.IN1
+IN6 => inst4.IN1
+IN6 => inst24.IN0
+IN6 => inst3.IN2
+IN6 => inst2.IN1
+IN6 => 74148:inst14.2N
+IN5 => inst6.IN2
+IN5 => inst23.IN0
+IN5 => inst5.IN1
+IN5 => inst3.IN1
+IN5 => inst2.IN2
+IN5 => 74148:inst14.1N
+IN4 => inst6.IN3
+IN4 => inst4.IN3
+IN4 => inst5.IN0
+IN4 => inst3.IN0
+IN4 => inst21.IN0
+IN4 => 74148:inst14.0N
+ERROR <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 74160:inst1.CLK
+C => inst42.IN0
+OUT0 <= OUT0.DB_MAX_OUTPUT_PORT_TYPE
+IN0 => 74148:inst13.0N
+IN1 => 74148:inst13.1N
+IN2 => 74148:inst13.2N
+IN3 => 74148:inst13.3N
+OUT1 <= OUT1.DB_MAX_OUTPUT_PORT_TYPE
+OUT2 <= OUT2.DB_MAX_OUTPUT_PORT_TYPE
+OUT3 <= OUT3.DB_MAX_OUTPUT_PORT_TYPE
+OUT4 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|74160:inst1
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|74160:inst
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|74283:inst29
+a[1] => f74283:sub.a[1]
+a[2] => f74283:sub.a[2]
+a[3] => f74283:sub.a[3]
+a[4] => f74283:sub.a[4]
+b[1] => f74283:sub.b[1]
+b[2] => f74283:sub.b[2]
+b[3] => f74283:sub.b[3]
+b[4] => f74283:sub.b[4]
+cin => ~NO_FANOUT~
+cout <= f74283:sub.cout
+sum[1] <= f74283:sub.sum[1]
+sum[2] <= f74283:sub.sum[2]
+sum[3] <= f74283:sub.sum[3]
+sum[4] <= f74283:sub.sum[4]
+
+
+|cnchensh|detect:inst|74283:inst29|f74283:sub
+SUM1 <= 76.DB_MAX_OUTPUT_PORT_TYPE
+CIN => 108.DATAIN
+A1 => 77.IN1
+A1 => 92.IN1
+A1 => 93.IN1
+B1 => 76.IN1
+B1 => 93.IN0
+B1 => 94.IN1
+COUT <= 91.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 95.IN1
+A2 => 97.IN1
+A2 => 79.IN1
+B2 => 97.IN0
+B2 => 96.IN1
+B2 => 78.IN1
+A3 => 98.IN1
+A3 => 100.IN1
+A3 => 81.IN1
+B3 => 100.IN0
+B3 => 99.IN1
+B3 => 80.IN1
+A4 => 101.IN1
+A4 => 103.IN1
+A4 => 83.IN1
+B4 => 103.IN0
+B4 => 102.IN1
+B4 => 82.IN1
+SUM4 <= 82.DB_MAX_OUTPUT_PORT_TYPE
+SUM3 <= 80.DB_MAX_OUTPUT_PORT_TYPE
+SUM2 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|74148:inst14
+EON <= 83.DB_MAX_OUTPUT_PORT_TYPE
+1N => 83.IN0
+1N => 103.IN0
+2N => 83.IN1
+2N => 55.IN0
+3N => 83.IN2
+3N => 57.IN0
+0N => 83.IN3
+4N => 83.IN4
+4N => 62.IN0
+5N => 83.IN5
+5N => 106.IN0
+6N => 83.IN6
+6N => 104.IN0
+7N => 107.IN0
+7N => 105.IN0
+EIN => 65.IN0
+GSN <= 84.DB_MAX_OUTPUT_PORT_TYPE
+A0N <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1N <= 109.DB_MAX_OUTPUT_PORT_TYPE
+A2N <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|74148:inst13
+EON <= 83.DB_MAX_OUTPUT_PORT_TYPE
+1N => 83.IN0
+1N => 103.IN0
+2N => 83.IN1
+2N => 55.IN0
+3N => 83.IN2
+3N => 57.IN0
+0N => 83.IN3
+4N => 83.IN4
+4N => 62.IN0
+5N => 83.IN5
+5N => 106.IN0
+6N => 83.IN6
+6N => 104.IN0
+7N => 107.IN0
+7N => 105.IN0
+EIN => 65.IN0
+GSN <= 84.DB_MAX_OUTPUT_PORT_TYPE
+A0N <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1N <= 109.DB_MAX_OUTPUT_PORT_TYPE
+A2N <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|detect:inst|7485:inst28
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => ~NO_FANOUT~
+albi => ~NO_FANOUT~
+aebi => ~NO_FANOUT~
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|cnchensh|detect:inst|7485:inst28|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|cnchensh|signal:inst3
+Q0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|buzzer:inst7
+LIGHT <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+CLKSOURCE => 74160:inst22.CLK
+CLKSOURCE => 74160:inst.CLK
+KEYON => inst24.IN0
+BUZZER <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+ERROR => inst15.IN2
+
+
+|cnchensh|buzzer:inst7|74160:inst22
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|buzzer:inst7|74160:inst2
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|buzzer:inst7|74160:inst1
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnchensh|buzzer:inst7|74160:inst
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+

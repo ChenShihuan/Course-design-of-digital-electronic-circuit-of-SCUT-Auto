@@ -1,0 +1,356 @@
+Analysis & Synthesis report for cnchensh
+Tue Jun 26 18:29:33 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: detect:inst|74283:inst29
+ 11. Parameter Settings for User Entity Instance: detect:inst|7485:inst28
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Jun 26 18:29:33 2018       ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name               ; cnchensh                                    ;
+; Top-level Entity Name       ; cnchensh                                    ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 91                                          ;
+; Total pins                  ; 27                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM1270T144C5      ;                    ;
+; Top-level entity name                                            ; cnchensh           ; cnchensh           ;
+; Family name                                                      ; MAX II             ; Cyclone IV GX      ;
+; Maximum processors allowed for parallel compilation              ; 4                  ;                    ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+; cnchensh.bdf                     ; yes             ; User Block Diagram/Schematic File        ; E:/164/cnchensh/cnchensh.bdf                                              ;         ;
+; signal.bdf                       ; yes             ; User Block Diagram/Schematic File        ; E:/164/cnchensh/signal.bdf                                                ;         ;
+; detect.bdf                       ; yes             ; User Block Diagram/Schematic File        ; E:/164/cnchensh/detect.bdf                                                ;         ;
+; display.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/164/cnchensh/display.bdf                                               ;         ;
+; 7448.bdf                         ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/7448.bdf   ;         ;
+; 74160.bdf                        ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/74160.bdf  ;         ;
+; 74283.tdf                        ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/74283.tdf  ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/megafunctions/aglobal.inc  ;         ;
+; f74283.bdf                       ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/f74283.bdf ;         ;
+; 74148.bdf                        ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/74148.bdf  ;         ;
+; 7485.tdf                         ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/7485.tdf   ;         ;
+; f7485.bdf                        ; yes             ; Megafunction                             ; d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/f7485.bdf  ;         ;
+; buzzer.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/164/cnchensh/buzzer.bdf                                                ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Total logic elements                        ; 91                 ;
+;     -- Combinational with no register       ; 49                 ;
+;     -- Register only                        ; 5                  ;
+;     -- Combinational with a register        ; 37                 ;
+;                                             ;                    ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 33                 ;
+;     -- 3 input functions                    ; 20                 ;
+;     -- 2 input functions                    ; 19                 ;
+;     -- 1 input functions                    ; 9                  ;
+;     -- 0 input functions                    ; 5                  ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 91                 ;
+;     -- arithmetic mode                      ; 0                  ;
+;     -- qfbk mode                            ; 0                  ;
+;     -- register cascade mode                ; 0                  ;
+;     -- synchronous clear/load mode          ; 0                  ;
+;     -- asynchronous clear/load mode         ; 33                 ;
+;                                             ;                    ;
+; Total registers                             ; 42                 ;
+; I/O pins                                    ; 27                 ;
+; Maximum fan-out node                        ; buzzer:inst7|inst6 ;
+; Maximum fan-out                             ; 19                 ;
+; Total fan-out                               ; 341                ;
+; Average fan-out                             ; 2.89               ;
++---------------------------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                           ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-------------+--------------+
+; |cnchensh                  ; 91 (0)      ; 42           ; 0          ; 27   ; 0            ; 49 (0)       ; 5 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |cnchensh                                     ; cnchensh    ; work         ;
+;    |buzzer:inst7|          ; 30 (10)     ; 23           ; 0          ; 0    ; 0            ; 7 (3)        ; 2 (2)             ; 21 (5)           ; 0 (0)           ; 0 (0)      ; |cnchensh|buzzer:inst7                        ; buzzer      ; work         ;
+;       |74160:inst1|        ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|buzzer:inst7|74160:inst1            ; 74160       ; work         ;
+;       |74160:inst22|       ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|buzzer:inst7|74160:inst22           ; 74160       ; work         ;
+;       |74160:inst2|        ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|buzzer:inst7|74160:inst2            ; 74160       ; work         ;
+;       |74160:inst|         ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|buzzer:inst7|74160:inst             ; 74160       ; work         ;
+;    |detect:inst|           ; 27 (13)     ; 13           ; 0          ; 0    ; 0            ; 14 (8)       ; 0 (0)             ; 13 (5)           ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst                         ; detect      ; work         ;
+;       |74148:inst13|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74148:inst13            ; 74148       ; work         ;
+;       |74148:inst14|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74148:inst14            ; 74148       ; work         ;
+;       |74160:inst1|        ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74160:inst1             ; 74160       ; work         ;
+;       |74160:inst|         ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74160:inst              ; 74160       ; work         ;
+;       |74283:inst29|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74283:inst29            ; 74283       ; work         ;
+;          |f74283:sub|      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|74283:inst29|f74283:sub ; f74283      ; work         ;
+;       |7485:inst28|        ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|7485:inst28             ; 7485        ; work         ;
+;          |f7485:sub|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|detect:inst|7485:inst28|f7485:sub   ; f7485       ; work         ;
+;    |display:inst2|         ; 24 (5)      ; 0            ; 0          ; 0    ; 0            ; 24 (5)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|display:inst2                       ; display     ; work         ;
+;       |7448:inst|          ; 19 (19)     ; 0            ; 0          ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |cnchensh|display:inst2|7448:inst             ; 7448        ; work         ;
+;    |signal:inst3|          ; 10 (10)     ; 6            ; 0          ; 0    ; 0            ; 4 (4)        ; 3 (3)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |cnchensh|signal:inst3                        ; signal      ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 42    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; detect:inst|inst9                      ; 17      ;
+; buzzer:inst7|inst7                     ; 2       ;
+; buzzer:inst7|inst6                     ; 19      ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: detect:inst|74283:inst29 ;
++------------------------+--------+-------------------------------------+
+; Parameter Name         ; Value  ; Type                                ;
++------------------------+--------+-------------------------------------+
+; DEVICE_FAMILY          ; MAX II ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                      ;
++------------------------+--------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: detect:inst|7485:inst28 ;
++------------------------+--------+------------------------------------+
+; Parameter Name         ; Value  ; Type                               ;
++------------------------+--------+------------------------------------+
+; DEVICE_FAMILY          ; MAX II ; Untyped                            ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                     ;
++------------------------+--------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Tue Jun 26 18:29:11 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cnchensh -c cnchensh
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file cnchensh.bdf
+    Info (12023): Found entity 1: cnchensh
+Warning (12019): Can't analyze file -- file fengmingqi.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file signal.bdf
+    Info (12023): Found entity 1: signal
+Info (12021): Found 1 design units, including 1 entities, in source file detect.bdf
+    Info (12023): Found entity 1: detect
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+    Info (12023): Found entity 1: Block1
+Info (12021): Found 1 design units, including 1 entities, in source file displayfuck.bdf
+    Info (12023): Found entity 1: displayfuck
+Info (12127): Elaborating entity "cnchensh" for the top level hierarchy
+Warning (12125): Using design file display.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: display
+Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
+Warning (275011): Block or symbol "OR2" of instance "inst6" overlaps another block or symbol
+Info (12128): Elaborating entity "7448" for hierarchy "display:inst2|7448:inst"
+Info (12130): Elaborated megafunction instantiation "display:inst2|7448:inst"
+Info (12128): Elaborating entity "detect" for hierarchy "detect:inst"
+Warning (275011): Block or symbol "74160" of instance "inst" overlaps another block or symbol
+Warning (275011): Block or symbol "74148" of instance "inst13" overlaps another block or symbol
+Info (12128): Elaborating entity "74160" for hierarchy "detect:inst|74160:inst1"
+Info (12130): Elaborated megafunction instantiation "detect:inst|74160:inst1"
+Info (12128): Elaborating entity "74283" for hierarchy "detect:inst|74283:inst29"
+Info (12130): Elaborated megafunction instantiation "detect:inst|74283:inst29"
+Info (12128): Elaborating entity "f74283" for hierarchy "detect:inst|74283:inst29|f74283:sub" File: d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/74283.tdf Line: 24
+Info (12131): Elaborated megafunction instantiation "detect:inst|74283:inst29|f74283:sub", which is child of megafunction instantiation "detect:inst|74283:inst29" File: d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/74283.tdf Line: 24
+Info (12128): Elaborating entity "74148" for hierarchy "detect:inst|74148:inst14"
+Info (12130): Elaborated megafunction instantiation "detect:inst|74148:inst14"
+Info (12128): Elaborating entity "7485" for hierarchy "detect:inst|7485:inst28"
+Info (12130): Elaborated megafunction instantiation "detect:inst|7485:inst28"
+Info (12128): Elaborating entity "f7485" for hierarchy "detect:inst|7485:inst28|f7485:sub" File: d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/7485.tdf Line: 27
+Info (12131): Elaborated megafunction instantiation "detect:inst|7485:inst28|f7485:sub", which is child of megafunction instantiation "detect:inst|7485:inst28" File: d:/programfiles/quartusprime/quartus/libraries/others/maxplus2/7485.tdf Line: 27
+Info (12128): Elaborating entity "signal" for hierarchy "signal:inst3"
+Warning (12125): Using design file buzzer.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: buzzer
+Info (12128): Elaborating entity "buzzer" for hierarchy "buzzer:inst7"
+Info (13014): Ignored 3 buffer(s)
+    Info (13017): Ignored 1 CASCADE buffer(s)
+    Info (13019): Ignored 2 SOFT buffer(s)
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node "detect:inst|OUT0" into a selector
+    Warning (13048): Converted tri-state node "detect:inst|OUT1" into a selector
+    Warning (13048): Converted tri-state node "detect:inst|OUT2" into a selector
+    Warning (13048): Converted tri-state node "detect:inst|OUT3" into a selector
+Info (18000): Registers with preset signals will power-up high
+Info (18008): Converted 1 single input CARRY primitives to CARRY_SUM primitives
+Warning (18009): Ignored 2 CARRY_SUM primitives
+    Warning (18011): Ignored 1 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
+        Warning (18012): Can't place logic fed by CARRY_SUM primitive "detect:inst|74283:inst29|f74283:sub|89~0" into a single logic cell
+            Warning (18042): Node "detect:inst|OUT2~1" of type LUT
+            Warning (18042): Node "detect:inst|74283:inst29|f74283:sub|90~0" of type CARRY_SUM
+    Warning (18015): Ignored 1 CARRY_SUM primitives -- logic cell requires more inputs than it can contain
+        Warning (18016): Can't place CARRY primitive "detect:inst|74283:inst29|f74283:sub|90~0" -- logic cell requires more inputs than it can contain
+Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 91 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4734 megabytes
+    Info: Processing ended: Tue Jun 26 18:29:33 2018
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:34
+
+

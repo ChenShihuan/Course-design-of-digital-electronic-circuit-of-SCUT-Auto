@@ -1,0 +1,91 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ProgramFiles/QuartusPrime/163/cnchensh/simulation/qsim
+vcnchensh
+Z1 !s110 1528978290
+!i10b 1
+!s100 TJnO@ef911c1JMJzgYE=G2
+ITj6JFQg4>cn2W=5]KTKlW3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1528978287
+8cnchensh.vo
+Fcnchensh.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1528978289.000000
+!s107 cnchensh.vo|
+!s90 -work|work|cnchensh.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+Ecnchensh_vhd_vec_tst
+Z6 w1528854073
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z9 8Waveform.vwf.vht
+Z10 FWaveform.vwf.vht
+l0
+L31
+V>S8QWgkP5bKgWUGmI_ke?2
+!s100 hMjOffnI1a?]njYEGCATH0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1528854081
+!i10b 1
+Z13 !s108 1528854081.000000
+Z14 !s90 -work|work|Waveform.vwf.vht|
+Z15 !s107 Waveform.vwf.vht|
+!i113 1
+R4
+Z16 tExplicit 1 CvgOpt 0
+Acnchensh_arch
+R7
+R8
+DEx4 work 20 cnchensh_vhd_vec_tst 0 22 >S8QWgkP5bKgWUGmI_ke?2
+l82
+L33
+VO]IgMHCbR9BGSDb2J^aG31
+!s100 CSUH@>jczEzL_6hQC;Rg`1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R4
+R16
+vcnchensh_vlg_vec_tst
+R1
+!i10b 1
+!s100 Eo2<J=_03oa]F1A:Ri0YP3
+I8I]Ke5NJ@KG5g5`8Kczck3
+R2
+R0
+w1528978283
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1528978290.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

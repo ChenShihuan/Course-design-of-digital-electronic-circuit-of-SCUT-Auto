@@ -1,0 +1,328 @@
+Simulator report for cnchensh
+Fri Jun 15 09:10:20 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 1.0 us        ;
+; Simulation Netlist Size     ; 114 nodes     ;
+; Simulation Coverage         ;      23.08 %  ;
+; Total Number of Transitions ; 602           ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270T144C5 ;
++-----------------------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; End time                                                                                   ; 100 s        ;               ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      23.08 % ;
+; Total nodes checked                                 ; 114          ;
+; Total output ports checked                          ; 104          ;
+; Total output ports with complete 1/0-value coverage ; 24           ;
+; Total output ports with no 1/0-value coverage       ; 54           ;
+; Total output ports with no 1-value coverage         ; 62           ;
+; Total output ports with no 0-value coverage         ; 72           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |cnchensh|display:inst2|7448:inst|72     ; |cnchensh|display:inst2|7448:inst|72     ; combout          ;
+; |cnchensh|signal:inst3|inst              ; |cnchensh|signal:inst3|inst              ; regout           ;
+; |cnchensh|signal:inst3|inst13            ; |cnchensh|signal:inst3|inst13            ; combout          ;
+; |cnchensh|signal:inst3|inst3             ; |cnchensh|signal:inst3|inst14            ; combout          ;
+; |cnchensh|signal:inst3|inst3             ; |cnchensh|signal:inst3|inst3             ; regout           ;
+; |cnchensh|signal:inst3|inst4             ; |cnchensh|signal:inst3|inst15            ; combout          ;
+; |cnchensh|signal:inst3|inst4             ; |cnchensh|signal:inst3|inst4             ; regout           ;
+; |cnchensh|signal:inst3|inst7             ; |cnchensh|signal:inst3|inst7             ; regout           ;
+; |cnchensh|signal:inst3|inst6             ; |cnchensh|signal:inst3|inst16            ; combout          ;
+; |cnchensh|detect:inst|74160:inst1|45     ; |cnchensh|detect:inst|74160:inst1|45     ; combout          ;
+; |cnchensh|detect:inst|74148:inst13|109~3 ; |cnchensh|detect:inst|74148:inst13|109~3 ; combout          ;
+; |cnchensh|detect:inst|74160:inst1|8      ; |cnchensh|detect:inst|74160:inst1|8      ; regout           ;
+; |cnchensh|detect:inst|74160:inst1|7      ; |cnchensh|detect:inst|74160:inst1|7      ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst1|7     ; |cnchensh|buzzer:inst7|74160:inst1|7     ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst|45     ; |cnchensh|buzzer:inst7|74160:inst|45     ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst|8      ; |cnchensh|buzzer:inst7|74160:inst|8      ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst|7      ; |cnchensh|buzzer:inst7|74160:inst|7      ; regout           ;
+; |cnchensh|CLK                            ; |cnchensh|CLK~corein                     ; combout          ;
+; |cnchensh|G2                             ; |cnchensh|G2                             ; padio            ;
+; |cnchensh|O0                             ; |cnchensh|O0                             ; padio            ;
+; |cnchensh|O1                             ; |cnchensh|O1                             ; padio            ;
+; |cnchensh|O2                             ; |cnchensh|O2                             ; padio            ;
+; |cnchensh|O3                             ; |cnchensh|O3                             ; padio            ;
+; |cnchensh|pin_name                       ; |cnchensh|pin_name                       ; padio            ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |cnchensh|detect:inst|inst26                   ; |cnchensh|detect:inst|inst26                   ; regout           ;
+; |cnchensh|detect:inst|inst27                   ; |cnchensh|detect:inst|inst27                   ; regout           ;
+; |cnchensh|display:inst2|inst6~0                ; |cnchensh|display:inst2|inst6~0                ; combout          ;
+; |cnchensh|display:inst2|inst6~1                ; |cnchensh|display:inst2|inst6~1                ; combout          ;
+; |cnchensh|display:inst2|inst8                  ; |cnchensh|display:inst2|inst8                  ; combout          ;
+; |cnchensh|display:inst2|inst10                 ; |cnchensh|display:inst2|inst10                 ; combout          ;
+; |cnchensh|detect:inst|OUT2~1                   ; |cnchensh|detect:inst|OUT2~1                   ; combout          ;
+; |cnchensh|display:inst2|7448:inst|69~0         ; |cnchensh|display:inst2|7448:inst|69~0         ; combout          ;
+; |cnchensh|display:inst2|7448:inst|39~0         ; |cnchensh|display:inst2|7448:inst|39~0         ; combout          ;
+; |cnchensh|detect:inst|OUT3~0                   ; |cnchensh|detect:inst|OUT3~0                   ; combout          ;
+; |cnchensh|display:inst2|7448:inst|69~1         ; |cnchensh|display:inst2|7448:inst|69~1         ; combout          ;
+; |cnchensh|detect:inst|OUT1~0                   ; |cnchensh|detect:inst|OUT1~0                   ; combout          ;
+; |cnchensh|display:inst2|7448:inst|68~0         ; |cnchensh|display:inst2|7448:inst|68~0         ; combout          ;
+; |cnchensh|display:inst2|7448:inst|68~2         ; |cnchensh|display:inst2|7448:inst|68~2         ; combout          ;
+; |cnchensh|display:inst2|7448:inst|70~0         ; |cnchensh|display:inst2|7448:inst|70~0         ; combout          ;
+; |cnchensh|display:inst2|7448:inst|70~1         ; |cnchensh|display:inst2|7448:inst|70~1         ; combout          ;
+; |cnchensh|display:inst2|7448:inst|25           ; |cnchensh|display:inst2|7448:inst|25           ; combout          ;
+; |cnchensh|display:inst2|7448:inst|4~0          ; |cnchensh|display:inst2|7448:inst|4~0          ; combout          ;
+; |cnchensh|display:inst2|7448:inst|3~0          ; |cnchensh|display:inst2|7448:inst|3~0          ; combout          ;
+; |cnchensh|display:inst2|7448:inst|38~0         ; |cnchensh|display:inst2|7448:inst|38~0         ; combout          ;
+; |cnchensh|buzzer:inst7|inst7                   ; |cnchensh|buzzer:inst7|inst7                   ; regout           ;
+; |cnchensh|buzzer:inst7|inst15~0                ; |cnchensh|buzzer:inst7|inst15~0                ; combout          ;
+; |cnchensh|buzzer:inst7|inst6                   ; |cnchensh|buzzer:inst7|inst6                   ; regout           ;
+; |cnchensh|buzzer:inst7|inst21                  ; |cnchensh|buzzer:inst7|inst21                  ; combout          ;
+; |cnchensh|detect:inst|7485:inst28|f7485:sub|84 ; |cnchensh|detect:inst|7485:inst28|f7485:sub|84 ; combout          ;
+; |cnchensh|detect:inst|74160:inst|8             ; |cnchensh|detect:inst|74160:inst|8             ; regout           ;
+; |cnchensh|detect:inst|74160:inst|7             ; |cnchensh|detect:inst|74160:inst|7             ; regout           ;
+; |cnchensh|detect:inst|inst7~0                  ; |cnchensh|detect:inst|inst7~0                  ; combout          ;
+; |cnchensh|detect:inst|inst7~1                  ; |cnchensh|detect:inst|inst7~1                  ; combout          ;
+; |cnchensh|detect:inst|inst7~2                  ; |cnchensh|detect:inst|inst7~2                  ; combout          ;
+; |cnchensh|buzzer:inst7|inst8                   ; |cnchensh|buzzer:inst7|inst8                   ; regout           ;
+; |cnchensh|buzzer:inst7|inst4                   ; |cnchensh|buzzer:inst7|inst14                  ; combout          ;
+; |cnchensh|buzzer:inst7|inst4                   ; |cnchensh|buzzer:inst7|inst4                   ; regout           ;
+; |cnchensh|detect:inst|OUT2~2                   ; |cnchensh|detect:inst|OUT2~2                   ; combout          ;
+; |cnchensh|buzzer:inst7|inst5                   ; |cnchensh|buzzer:inst7|inst5                   ; regout           ;
+; |cnchensh|detect:inst|inst6                    ; |cnchensh|detect:inst|inst6                    ; combout          ;
+; |cnchensh|detect:inst|74160:inst|6             ; |cnchensh|detect:inst|74160:inst|6             ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst1|45          ; |cnchensh|buzzer:inst7|74160:inst1|45          ; combout          ;
+; |cnchensh|buzzer:inst7|inst3                   ; |cnchensh|buzzer:inst7|inst3                   ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst2|45          ; |cnchensh|buzzer:inst7|74160:inst2|45          ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst22|45         ; |cnchensh|buzzer:inst7|74160:inst22|45         ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst2|8           ; |cnchensh|buzzer:inst7|74160:inst2|8           ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst2|7           ; |cnchensh|buzzer:inst7|74160:inst2|7           ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst22|8          ; |cnchensh|buzzer:inst7|74160:inst22|8          ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst22|7          ; |cnchensh|buzzer:inst7|74160:inst22|7          ; regout           ;
+; |cnchensh|IN6                                  ; |cnchensh|IN6~corein                           ; combout          ;
+; |cnchensh|IN5                                  ; |cnchensh|IN5~corein                           ; combout          ;
+; |cnchensh|IN7                                  ; |cnchensh|IN7~corein                           ; combout          ;
+; |cnchensh|IN4                                  ; |cnchensh|IN4~corein                           ; combout          ;
+; |cnchensh|A1                                   ; |cnchensh|A1                                   ; padio            ;
+; |cnchensh|D1                                   ; |cnchensh|D1                                   ; padio            ;
+; |cnchensh|E1                                   ; |cnchensh|E1                                   ; padio            ;
+; |cnchensh|F1                                   ; |cnchensh|F1                                   ; padio            ;
+; |cnchensh|G1                                   ; |cnchensh|G1                                   ; padio            ;
+; |cnchensh|A2                                   ; |cnchensh|A2                                   ; padio            ;
+; |cnchensh|B2                                   ; |cnchensh|B2                                   ; padio            ;
+; |cnchensh|C2                                   ; |cnchensh|C2                                   ; padio            ;
+; |cnchensh|E2                                   ; |cnchensh|E2                                   ; padio            ;
+; |cnchensh|F2                                   ; |cnchensh|F2                                   ; padio            ;
+; |cnchensh|buzzer                               ; |cnchensh|buzzer                               ; padio            ;
+; |cnchensh|light                                ; |cnchensh|light                                ; padio            ;
+; |cnchensh|ER                                   ; |cnchensh|ER                                   ; padio            ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |cnchensh|detect:inst|inst19                      ; |cnchensh|detect:inst|inst19                      ; regout           ;
+; |cnchensh|detect:inst|inst26                      ; |cnchensh|detect:inst|inst26                      ; regout           ;
+; |cnchensh|detect:inst|inst27                      ; |cnchensh|detect:inst|inst27                      ; regout           ;
+; |cnchensh|display:inst2|inst6~0                   ; |cnchensh|display:inst2|inst6~0                   ; combout          ;
+; |cnchensh|detect:inst|inst9                       ; |cnchensh|detect:inst|inst9                       ; regout           ;
+; |cnchensh|display:inst2|inst6~1                   ; |cnchensh|display:inst2|inst6~1                   ; combout          ;
+; |cnchensh|detect:inst|OUT2~1                      ; |cnchensh|detect:inst|OUT2~1                      ; combout          ;
+; |cnchensh|display:inst2|7448:inst|69~0            ; |cnchensh|display:inst2|7448:inst|69~0            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|27              ; |cnchensh|display:inst2|7448:inst|27              ; combout          ;
+; |cnchensh|display:inst2|7448:inst|39~0            ; |cnchensh|display:inst2|7448:inst|39~0            ; combout          ;
+; |cnchensh|detect:inst|OUT3~0                      ; |cnchensh|detect:inst|OUT3~0                      ; combout          ;
+; |cnchensh|display:inst2|7448:inst|69~1            ; |cnchensh|display:inst2|7448:inst|69~1            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|68~0            ; |cnchensh|display:inst2|7448:inst|68~0            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|68~2            ; |cnchensh|display:inst2|7448:inst|68~2            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|70~0            ; |cnchensh|display:inst2|7448:inst|70~0            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|70~1            ; |cnchensh|display:inst2|7448:inst|70~1            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|25              ; |cnchensh|display:inst2|7448:inst|25              ; combout          ;
+; |cnchensh|display:inst2|7448:inst|4~0             ; |cnchensh|display:inst2|7448:inst|4~0             ; combout          ;
+; |cnchensh|display:inst2|7448:inst|3~0             ; |cnchensh|display:inst2|7448:inst|3~0             ; combout          ;
+; |cnchensh|display:inst2|inst2~0                   ; |cnchensh|display:inst2|inst2~0                   ; combout          ;
+; |cnchensh|display:inst2|7448:inst|71              ; |cnchensh|display:inst2|7448:inst|71              ; combout          ;
+; |cnchensh|buzzer:inst7|inst7                      ; |cnchensh|buzzer:inst7|inst7                      ; regout           ;
+; |cnchensh|buzzer:inst7|inst15~0                   ; |cnchensh|buzzer:inst7|inst15~0                   ; combout          ;
+; |cnchensh|buzzer:inst7|inst6                      ; |cnchensh|buzzer:inst7|inst6                      ; regout           ;
+; |cnchensh|buzzer:inst7|inst21                     ; |cnchensh|buzzer:inst7|inst21                     ; combout          ;
+; |cnchensh|detect:inst|7485:inst28|f7485:sub|84    ; |cnchensh|detect:inst|7485:inst28|f7485:sub|84    ; combout          ;
+; |cnchensh|detect:inst|74148:inst13|8~0            ; |cnchensh|detect:inst|74148:inst13|8~0            ; combout          ;
+; |cnchensh|detect:inst|inst20                      ; |cnchensh|detect:inst|inst20                      ; regout           ;
+; |cnchensh|detect:inst|74160:inst|8                ; |cnchensh|detect:inst|74160:inst|8                ; regout           ;
+; |cnchensh|detect:inst|74160:inst|7                ; |cnchensh|detect:inst|74160:inst|7                ; regout           ;
+; |cnchensh|detect:inst|inst7~0                     ; |cnchensh|detect:inst|inst7~0                     ; combout          ;
+; |cnchensh|detect:inst|inst7~1                     ; |cnchensh|detect:inst|inst7~1                     ; combout          ;
+; |cnchensh|detect:inst|inst7~2                     ; |cnchensh|detect:inst|inst7~2                     ; combout          ;
+; |cnchensh|buzzer:inst7|inst8                      ; |cnchensh|buzzer:inst7|inst8                      ; regout           ;
+; |cnchensh|buzzer:inst7|inst4                      ; |cnchensh|buzzer:inst7|inst14                     ; combout          ;
+; |cnchensh|buzzer:inst7|inst4                      ; |cnchensh|buzzer:inst7|inst4                      ; regout           ;
+; |cnchensh|detect:inst|OUT2~2                      ; |cnchensh|detect:inst|OUT2~2                      ; combout          ;
+; |cnchensh|display:inst2|7448:inst|28              ; |cnchensh|display:inst2|7448:inst|28              ; combout          ;
+; |cnchensh|display:inst2|7448:inst|66~1            ; |cnchensh|display:inst2|7448:inst|66~1            ; combout          ;
+; |cnchensh|display:inst2|7448:inst|66~2            ; |cnchensh|display:inst2|7448:inst|66~2            ; combout          ;
+; |cnchensh|detect:inst|74283:inst29|f74283:sub|106 ; |cnchensh|detect:inst|74283:inst29|f74283:sub|106 ; combout          ;
+; |cnchensh|display:inst2|7448:inst|68~3            ; |cnchensh|display:inst2|7448:inst|68~3            ; combout          ;
+; |cnchensh|buzzer:inst7|inst5                      ; |cnchensh|buzzer:inst7|inst5                      ; regout           ;
+; |cnchensh|detect:inst|inst6                       ; |cnchensh|detect:inst|inst6                       ; combout          ;
+; |cnchensh|detect:inst|74160:inst|6                ; |cnchensh|detect:inst|74160:inst|6                ; regout           ;
+; |cnchensh|display:inst2|7448:inst|66~3            ; |cnchensh|display:inst2|7448:inst|66~3            ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst1|45             ; |cnchensh|buzzer:inst7|74160:inst1|45             ; combout          ;
+; |cnchensh|buzzer:inst7|inst3                      ; |cnchensh|buzzer:inst7|inst3                      ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst2|45             ; |cnchensh|buzzer:inst7|74160:inst2|45             ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst22|45            ; |cnchensh|buzzer:inst7|74160:inst22|45            ; combout          ;
+; |cnchensh|buzzer:inst7|74160:inst1|8              ; |cnchensh|buzzer:inst7|74160:inst1|8              ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst2|8              ; |cnchensh|buzzer:inst7|74160:inst2|8              ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst2|7              ; |cnchensh|buzzer:inst7|74160:inst2|7              ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst22|8             ; |cnchensh|buzzer:inst7|74160:inst22|8             ; regout           ;
+; |cnchensh|buzzer:inst7|74160:inst22|7             ; |cnchensh|buzzer:inst7|74160:inst22|7             ; regout           ;
+; |cnchensh|detect:inst|74148:inst14|84             ; |cnchensh|detect:inst|74148:inst14|84             ; combout          ;
+; |cnchensh|IN6                                     ; |cnchensh|IN6~corein                              ; combout          ;
+; |cnchensh|IN5                                     ; |cnchensh|IN5~corein                              ; combout          ;
+; |cnchensh|IN7                                     ; |cnchensh|IN7~corein                              ; combout          ;
+; |cnchensh|IN4                                     ; |cnchensh|IN4~corein                              ; combout          ;
+; |cnchensh|A1                                      ; |cnchensh|A1                                      ; padio            ;
+; |cnchensh|B1                                      ; |cnchensh|B1                                      ; padio            ;
+; |cnchensh|C1                                      ; |cnchensh|C1                                      ; padio            ;
+; |cnchensh|D1                                      ; |cnchensh|D1                                      ; padio            ;
+; |cnchensh|E1                                      ; |cnchensh|E1                                      ; padio            ;
+; |cnchensh|F1                                      ; |cnchensh|F1                                      ; padio            ;
+; |cnchensh|A2                                      ; |cnchensh|A2                                      ; padio            ;
+; |cnchensh|B2                                      ; |cnchensh|B2                                      ; padio            ;
+; |cnchensh|C2                                      ; |cnchensh|C2                                      ; padio            ;
+; |cnchensh|D2                                      ; |cnchensh|D2                                      ; padio            ;
+; |cnchensh|buzzer                                  ; |cnchensh|buzzer                                  ; padio            ;
+; |cnchensh|light                                   ; |cnchensh|light                                   ; padio            ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Fri Jun 15 09:10:19 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cnchensh -c cnchensh
+Info: Using vector source file "G:/164/cnchensh/Waveform.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Waveform.vwf called cnchensh.sim_ori.vwf has been created in the db folder
+Info: Inverted registers were found during simulation
+    Info: Register: |cnchensh|detect:inst|inst9
+    Info: Register: |cnchensh|buzzer:inst7|inst7
+    Info: Register: |cnchensh|buzzer:inst7|inst6
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      23.08 %
+Info: Number of transitions in simulation is 602
+Info: Vector file Waveform.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 141 megabytes
+    Info: Processing ended: Fri Jun 15 09:10:20 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

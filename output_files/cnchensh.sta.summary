@@ -1,0 +1,169 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLK'
+Slack : -1.824
+TNS   : -14.720
+
+Type  : Setup 'buzzer:inst7|74160:inst1|6'
+Slack : -1.806
+TNS   : -4.961
+
+Type  : Setup 'IN4'
+Slack : -1.803
+TNS   : -10.336
+
+Type  : Setup 'buzzer:inst7|74160:inst|6'
+Slack : -1.733
+TNS   : -4.944
+
+Type  : Setup 'signal:inst3|inst'
+Slack : -1.723
+TNS   : -5.057
+
+Type  : Setup 'buzzer:inst7|inst8'
+Slack : -1.245
+TNS   : -1.245
+
+Type  : Setup 'buzzer:inst7|74160:inst2|6'
+Slack : -0.943
+TNS   : -1.884
+
+Type  : Hold 'IN4'
+Slack : -8.425
+TNS   : -19.672
+
+Type  : Hold 'buzzer:inst7|74160:inst1|6'
+Slack : -4.880
+TNS   : -19.555
+
+Type  : Hold 'buzzer:inst7|74160:inst|6'
+Slack : -4.854
+TNS   : -16.712
+
+Type  : Hold 'CLK'
+Slack : -2.498
+TNS   : -22.770
+
+Type  : Hold 'buzzer:inst7|74160:inst2|6'
+Slack : 1.387
+TNS   : 0.000
+
+Type  : Hold 'signal:inst3|inst'
+Slack : 1.445
+TNS   : 0.000
+
+Type  : Hold 'buzzer:inst7|inst8'
+Slack : 1.691
+TNS   : 0.000
+
+Type  : Recovery 'CLK'
+Slack : -6.567
+TNS   : -53.392
+
+Type  : Recovery 'detect:inst|74160:inst1|6'
+Slack : -6.185
+TNS   : -6.185
+
+Type  : Recovery 'buzzer:inst7|inst8'
+Slack : -5.092
+TNS   : -5.092
+
+Type  : Recovery 'buzzer:inst7|74160:inst2|6'
+Slack : -4.189
+TNS   : -12.567
+
+Type  : Recovery 'buzzer:inst7|74160:inst22|6'
+Slack : -3.564
+TNS   : -3.564
+
+Type  : Recovery 'signal:inst3|inst'
+Slack : -2.479
+TNS   : -2.479
+
+Type  : Recovery 'IN4'
+Slack : -1.726
+TNS   : -6.904
+
+Type  : Recovery 'buzzer:inst7|74160:inst|6'
+Slack : -0.671
+TNS   : -2.684
+
+Type  : Recovery 'buzzer:inst7|74160:inst1|6'
+Slack : -0.270
+TNS   : -1.620
+
+Type  : Removal 'signal:inst3|inst'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Removal 'buzzer:inst7|74160:inst1|6'
+Slack : 0.716
+TNS   : 0.000
+
+Type  : Removal 'buzzer:inst7|74160:inst|6'
+Slack : 1.117
+TNS   : 0.000
+
+Type  : Removal 'IN4'
+Slack : 2.172
+TNS   : 0.000
+
+Type  : Removal 'detect:inst|74160:inst1|6'
+Slack : 2.286
+TNS   : 0.000
+
+Type  : Removal 'CLK'
+Slack : 2.668
+TNS   : 0.000
+
+Type  : Removal 'buzzer:inst7|74160:inst22|6'
+Slack : 3.510
+TNS   : 0.000
+
+Type  : Removal 'buzzer:inst7|74160:inst2|6'
+Slack : 4.635
+TNS   : 0.000
+
+Type  : Removal 'buzzer:inst7|inst8'
+Slack : 5.538
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'IN4'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'buzzer:inst7|74160:inst1|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'buzzer:inst7|74160:inst22|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'buzzer:inst7|74160:inst2|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'buzzer:inst7|74160:inst|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'buzzer:inst7|inst8'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'detect:inst|74160:inst1|6'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'signal:inst3|inst'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------
